@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "AiEnabledNetApplications": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "OPENAI_API_KEY": "<OpenAI API key>"
+      }
+    }
+  }
+}
