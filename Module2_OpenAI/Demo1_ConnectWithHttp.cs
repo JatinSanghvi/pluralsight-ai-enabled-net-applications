@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace JatinSanghvi.Module2_OpenAI;
 
-internal static class D1_ConnectWithHttp
+internal static class Demo1_ConnectWithHttp
 {
     // https://platform.openai.com/docs/api-reference/chat/create
     public static async Task CreateChatCompletionHttp()

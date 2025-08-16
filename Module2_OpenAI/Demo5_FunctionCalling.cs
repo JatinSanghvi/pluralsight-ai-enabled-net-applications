@@ -4,7 +4,7 @@ using OpenAI.Chat;
 
 namespace JatinSanghvi.Module2_OpenAI;
 
-internal static class D5_FunctionCalling
+internal static class Demo5_FunctionCalling
 {
     // https://github.com/openai/openai-dotnet?tab=readme-ov-file#how-to-use-chat-completions-with-tools-and-function-calling
     public static async Task ChatCompletionWithFunctionCalling(OpenAIClient client)

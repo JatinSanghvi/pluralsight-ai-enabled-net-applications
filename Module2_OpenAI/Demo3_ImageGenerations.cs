@@ -3,11 +3,11 @@ using OpenAI.Images;
 
 namespace JatinSanghvi.Module2_OpenAI;
 
-internal class D3_ImageGenerations
+internal class Demo3_ImageGenerations
 {
     private readonly ImageClient _imageClient;
 
-    public D3_ImageGenerations(OpenAIClient client)
+    public Demo3_ImageGenerations(OpenAIClient client)
     {
         _imageClient = client.GetImageClient("gpt-image-1");
     }

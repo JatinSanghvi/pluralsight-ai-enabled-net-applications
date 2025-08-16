@@ -4,11 +4,11 @@ using OpenAI.Chat;
 
 namespace JatinSanghvi.Module2_OpenAI;
 
-internal class D2_ChatCompletions
+internal class Demo2_ChatCompletions
 {
     private readonly ChatClient _chatClient;
 
-    public D2_ChatCompletions(OpenAIClient client)
+    public Demo2_ChatCompletions(OpenAIClient client)
     {
         _chatClient = client.GetChatClient("gpt-4.1-nano");
     }

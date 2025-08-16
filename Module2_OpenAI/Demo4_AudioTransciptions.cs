@@ -3,7 +3,7 @@ using OpenAI.Audio;
 
 namespace JatinSanghvi.Module2_OpenAI;
 
-internal static class D4_AudioTransciptions
+internal static class Demo4_AudioTransciptions
 {
     // https://github.com/openai/openai-dotnet/tree/main?tab=readme-ov-file#how-to-transcribe-audio
     // https://platform.openai.com/docs/api-reference/usage/audio_transcriptions

@@ -6,7 +6,7 @@ This repository was created by following PluralSight course: [Building AI-enable
 
 ### Module2_OpenAI
 
-Contains C# source files for different OpenAI API features:
+Contains C# source files for different OpenAI API features.
 
 - **Project files**
     - `Demo1_ConnectWithHttp.cs` - Calling OpenAI REST APIs directly.
@@ -15,9 +15,32 @@ Contains C# source files for different OpenAI API features:
     - `Demo4_AudioTransciptions.cs`: Audio transcription.
     - `Demo5_FunctionCalling.cs`: Chat completion with tools and function calling.
     - `Demo6_Responses.cs`: Responses API for text generation.
-- **Requirement**: OpenAI API key.
-- **Setup**: Add your key in `Module2_OpenAI/Properties/launchSettings.json`
+- **Requirement**: OpenAI account with credit balance.
+- **Setup**: Add your OpenAI API key in `Module2_OpenAI/Properties/launchSettings.json`
 - **Running project**: `dotnet run --project Module2_OpenAI/Module2_OpenAI.csproj`
 - **References**
     - [OpenAI Platform Guide](https://platform.openai.com/docs/guides)
     - [OpenAI .NET SDK Documentation](https://github.com/openai/openai-dotnet)
+
+### Module4_AzureAIService
+
+Contains C# source files for working with various Azure AI Services.
+
+- **Project files**
+    - `Demo1_Language.cs` - Language detection, sentiment analysis, and text summarization.
+    - `Demo2_ComputerVision.cs` - Image caption generation, and object recognition.
+    - `Demo3_SpeechService.cs` - Text-to-speech functionality.
+    - `Demo4_Translator.cs` - Text translation between languages.
+- **Requirements**: Azure subscription with the following AI Services:
+    - Azure AI Language (formerly Text Analytics)
+    - Azure AI Vision (formerly Computer Vision)
+    - Azure AI Speech (formerly Speech Services)
+    - Azure AI Translator (formerly Translator Text)
+- **Setup**: Add your Azure AI Services endpoints and keys in `Module4_AzureAIService/Properties/launchSettings.json`
+- **Running project**: `dotnet run --project Module4_AzureAIService/Module4_AzureAIService.csproj`
+- **References**
+    - [Azure AI Language Documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/language-service/)
+    - [Azure AI Vision Documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/)
+    - [Azure AI Speech Documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/)
+    - [Azure AI Translator Documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/)
+

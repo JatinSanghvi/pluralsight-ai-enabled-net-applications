@@ -1,0 +1,18 @@
+{
+  "profiles": {
+    "AiEnabledNetApplications": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "LANGUAGE_KEY": "<Language Key>",
+        "LANGUAGE_ENDPOINT": "https://<language-endpoint>.cognitiveservices.azure.com/",
+        "VISION_KEY": "<Vision Key>",
+        "VISION_ENDPOINT": "https://<vision-endpoint>.cognitiveservices.azure.com/",
+        "SPEECH_KEY": "<Speech Key>",
+        "SPEECH_REGION": "<speech-region>",
+        "TRANSLATION_KEY": "<Translation Key>",
+        "TRANSLATION_ENDPOINT": "https://<translation-endpoint>.cognitiveservices.azure.com/",
+        "TRANSLATION_REGION": "<translation-region>",
+      }
+    }
+  }
+}

@@ -5,11 +5,11 @@ using OpenAI.Responses;
 
 namespace JatinSanghvi.Module2_OpenAI;
 
-internal class D6_Responses
+internal class Demo6_Responses
 {
     private readonly OpenAIResponseClient _responseClient;
 
-    public D6_Responses(OpenAIClient client)
+    public Demo6_Responses(OpenAIClient client)
     {
         _responseClient = client.GetOpenAIResponseClient("gpt-4.1-nano");
     }
