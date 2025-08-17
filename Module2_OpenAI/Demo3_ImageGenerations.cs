@@ -16,6 +16,8 @@ internal class Demo3_ImageGenerations
     // https://platform.openai.com/docs/api-reference/images/create
     public async Task ImageGeneration()
     {
+        Console.WriteLine("\n# Image Generation\n");
+
         string prompt = "The concept for a living room that blends Scandinavian simplicity with Japanese minimalism for"
             + " a serene and cozy atmosphere. It's a space that invites relaxation and mindfulness, with natural light"
             + " and fresh air. Using neutral tones, including colors like white, beige, gray, and black, that create a"
@@ -35,14 +37,16 @@ internal class Demo3_ImageGenerations
 
         GeneratedImage image = await _imageClient.GenerateImageAsync(prompt, options);
 
-        using FileStream stream = File.OpenWrite(Path.Combine("Assets", "image-living-room-generated.png"));
+        using FileStream stream = File.OpenWrite("Module2_OpenAI/Assets/image-living-room-generated.png");
         await image.ImageBytes.ToStream().CopyToAsync(stream);
     }
 
     // https://platform.openai.com/docs/api-reference/images/createVariation
     public async Task ImageEdit()
     {
-        string imageFilePath = Path.Combine("Assets", "image-happy-color-source.png");
+        Console.WriteLine("\n# Image Edit\n");
+
+        string imageFilePath = "Module2_OpenAI/Assets/image-happy-color-source.png";
         string prompt = "Make the image photo-realistic with absolutely minimum edits. Make sure the women looks like a beauty model.";
 
         var options = new ImageEditOptions
@@ -52,7 +56,7 @@ internal class Demo3_ImageGenerations
 
         GeneratedImage image = await _imageClient.GenerateImageEditAsync(imageFilePath, prompt, options);
 
-        using FileStream outStream = File.OpenWrite(Path.Combine("Assets", "image-happy-color-generated.png"));
+        using FileStream outStream = File.OpenWrite("Module2_OpenAI/Assets/image-happy-color-generated.png");
         await image.ImageBytes.ToStream().CopyToAsync(outStream);
     }
 }

@@ -19,7 +19,7 @@ internal class Demo2_ComputerVision
     {
         Console.WriteLine("\n# Caption Generation\n");
 
-        using var imageStream = File.OpenRead("Assets/photo-empty-restaurant.jpeg");
+        using var imageStream = File.OpenRead("Module4_AzureAIService/Assets/photo-empty-restaurant.jpeg");
 
         ImageAnalysisResult analysis = await _client.AnalyzeAsync(
             imageData: await BinaryData.FromStreamAsync(imageStream),
@@ -32,7 +32,7 @@ internal class Demo2_ComputerVision
     {
         Console.WriteLine("\n# Tag Extraction\n");
 
-        using var imageStream = File.OpenRead("Assets/photo-empty-restaurant.jpeg");
+        using var imageStream = File.OpenRead("Module4_AzureAIService/Assets/photo-empty-restaurant.jpeg");
 
         ImageAnalysisResult analysis = await _client.AnalyzeAsync(
             imageData: await BinaryData.FromStreamAsync(imageStream),
@@ -48,7 +48,7 @@ internal class Demo2_ComputerVision
     {
         Console.WriteLine("\n# Object Detection\n");
 
-        using var imageStream = File.OpenRead("Assets/photo-empty-restaurant.jpeg");
+        using var imageStream = File.OpenRead("Module4_AzureAIService/Assets/photo-empty-restaurant.jpeg");
 
         ImageAnalysisResult analysis = await _client.AnalyzeAsync(
             imageData: await BinaryData.FromStreamAsync(imageStream),

@@ -9,6 +9,8 @@ internal static class Demo5_FunctionCalling
     // https://github.com/openai/openai-dotnet?tab=readme-ov-file#how-to-use-chat-completions-with-tools-and-function-calling
     public static async Task ChatCompletionWithFunctionCalling(OpenAIClient client)
     {
+        Console.WriteLine("\n# Chat Completion with Function Calling\n");
+
         ChatClient chatClient = client.GetChatClient("gpt-4.1-nano");
 
         ChatTool getCurrentLocationTool = ChatTool.CreateFunctionTool(
@@ -56,7 +58,7 @@ internal static class Demo5_FunctionCalling
             if (message is AssistantChatMessage assistantMessage && assistantMessage.ToolCalls.Count > 0)
             {
                 Console.WriteLine(string.Join(", ",
-                    assistantMessage.ToolCalls.Select(call => $"{call.FunctionName}({call.FunctionArguments.ToString()})")));
+                    assistantMessage.ToolCalls.Select(call => $"{call.FunctionName}({call.FunctionArguments})")));
             }
         }
     }

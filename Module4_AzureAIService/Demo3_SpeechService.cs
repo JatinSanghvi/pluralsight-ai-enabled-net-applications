@@ -19,7 +19,7 @@ internal class Demo3_SpeechService
     {
         Console.WriteLine("\n# Speech Recognition From File\n");
 
-        using var audioConfig = AudioConfig.FromWavFileInput("Assets/audio-gill.wav");
+        using var audioConfig = AudioConfig.FromWavFileInput("Module4_AzureAIService/Assets/audio-gill.wav");
         using var recognizer = new SpeechRecognizer(_speechConfig, audioConfig);
         SpeechRecognitionResult recognition = await recognizer.RecognizeOnceAsync();
 

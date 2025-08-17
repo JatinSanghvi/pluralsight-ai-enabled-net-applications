@@ -6,7 +6,7 @@ This repository was created by following PluralSight course: [Building AI-enable
 
 ### Module2_OpenAI
 
-Contains C# source files for different OpenAI API features.
+Contains source files for different OpenAI API features.
 
 - **Project files**
     - `Demo1_ConnectWithHttp.cs` - Calling OpenAI REST APIs directly.
@@ -24,7 +24,7 @@ Contains C# source files for different OpenAI API features.
 
 ### Module4_AzureAIService
 
-Contains C# source files for working with various Azure AI Services.
+Contains source files for working with various Azure AI Services.
 
 - **Project files**
     - `Demo1_Language.cs` - Language detection, sentiment analysis, and text summarization.
@@ -44,3 +44,16 @@ Contains C# source files for working with various Azure AI Services.
     - [Azure AI Speech Documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/)
     - [Azure AI Translator Documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/)
 
+### Module6_SemanticKernel
+
+Contains source files for working with Microsoft Semantic Kernel SDK.
+
+- **Project files**
+    - `Demo1_ChatCompletion.cs` - Chat completion using Semantic Kernel.
+    - `Demo2_ImageGeneration.cs` - Image generation with Semantic Kernel.
+    - `Demo3_Plugins.cs` - Using plugins with Semantic Kernel.
+- **Setup**: Add your API keys and endpoints in `Module6_SemanticKernel/Properties/launchSettings.json` as required by the demos.
+- **Running project**: `dotnet run --project Module6_SemanticKernel/Module6_SemanticKernel.csproj`
+- **References**
+    - [Microsoft Semantic Kernel Documentation](https://learn.microsoft.com/en-us/semantic-kernel/)
+    - [Semantic Kernel GitHub Repository](https://github.com/microsoft/semantic-kernel/)
